@@ -1,5 +1,5 @@
 function isValidLoan(daysLate) {
-  return daysLate >= 0;
+  return daysLate <= 1;
 }
 
 function calculateLateFee(daysLate, ratePerDay) {
