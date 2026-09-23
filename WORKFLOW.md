@@ -3,29 +3,30 @@
  ## 1. Line-by-Line Attribution of `calculateLateFee`
 
 ```javascript
+function isValidLoan(daysLate) {
+  return daysLate >= 0;
+}
+
 function calculateLateFee(daysLate, ratePerDay) {
-  // 1. Grace Period — Contributor 1 (Clone A / Task 1)
-  if (daysLate <= 1) {
+  if(daysLate <= 1) {
     return 0;
   }
+  fee = daysLate * ratePerDay;
 
-  let rawFee = daysLate * ratePerDay;
-
-  // 2. $1 Minimum Fee — Contributor 1 (Clone A / Task 6)
-  if (rawFee > 0 && rawFee < 1) {
+  if(fee > 0 && fee < 1) {
     return 1;
+  } else {
+    fee = Math.round(fee);
   }
 
-  // 3. Rounding — Contributor 2 (Clone B / Task 2)
-  let fee = Math.round(rawFee);
-
-  // 4. $20 Maximum Fee Cap — Contributor 3 (Clone C / Task 4)
-  if (fee > 20) {
-    fee = 20;
+  if(fee > 20) {
+    return 20;
   }
 
   return fee;
 }
+
+module.exports = { isValidLoan, calculateLateFee };
 ```
 
 ## 2. Comparing Task 3 (Two-Way Conflict) vs. Task 5 (Three-Way Conflict)
