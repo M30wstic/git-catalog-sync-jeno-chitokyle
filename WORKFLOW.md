@@ -46,11 +46,18 @@ Enforcing a **Pull Request (PR) workflow with feature branches** and requiring d
 
 In the lab exercise, Push rejections happened because multiple people tried pushing directly to the same remote branch without pulling the latest changes first. To prevent this, the team should use short-lived feature branches and Pull Requests instead of pushing directly to shared branches. Apart from that, adopting a policy where developers always run `git fetch` and rebase their local branch before pushing ensures every push goes through cleanly without rejection.
 
-## Screenshot Evidence
+# Screenshot Evidence
+## 1. Task 1
 ![Task 1 Screenshot](./screenshots/task1.png)
+## 2. Task 2
 ![Task 2 Screenshot](./screenshots/task2.png)
+## 3. Task 3
 ![Task 3 Screenshot](./screenshots/task3.png)
+## 4. Task 4
 ![Task 4 Screenshot](./screenshots/task4.png)
+## 5. Task 5
 ![Task 5 Screenshot](./screenshots/task5.png)
+## 6. Task 6
 ![Task 6 Screenshot](./screenshots/task6.png)
+## 7. Task 7
 ![Task 7 Screenshot](./screenshots/task7.png)
