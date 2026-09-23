@@ -2,4 +2,14 @@ function isValidLoan(daysLate) {
   return daysLate >= 0;
 }
 
-module.exports = { isValidLoan };
+function calculateLateFee(daysLate, ratePerDay) {
+  let fee = daysLate * ratePerDay;
+  
+  if (fee > 20) {
+    return 20;
+  }
+  
+  return fee;
+}
+
+module.exports = { isValidLoan, calculateLateFee };
