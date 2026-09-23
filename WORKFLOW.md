@@ -45,3 +45,12 @@ Task 6, on the other hand, utilized `git fetch origin` followed by `git rebase o
 Enforcing a **Pull Request (PR) workflow with feature branches** and requiring developers to **sync locally (`git pull --rebase`)** before pushing.
 
 In the lab exercise, Push rejections happened because multiple people tried pushing directly to the same remote branch without pulling the latest changes first. To prevent this, the team should use short-lived feature branches and Pull Requests instead of pushing directly to shared branches. Apart from that, adopting a policy where developers always run `git fetch` and rebase their local branch before pushing ensures every push goes through cleanly without rejection.
+
+## Screenshot Evidence
+![Task 1 Screenshot](./screenshots/task1.png)
+![Task 2 Screenshot](./screenshots/task2.png)
+![Task 3 Screenshot](./screenshots/task3.png)
+![Task 4 Screenshot](./screenshots/task4.png)
+![Task 5 Screenshot](./screenshots/task5.png)
+![Task 6 Screenshot](./screenshots/task6.png)
+![Task 7 Screenshot](./screenshots/task7.png)
